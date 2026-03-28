@@ -4,9 +4,7 @@ import pickle
 import numpy as np
 
 # Load model
-import os
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model = pickle.load(open(os.path.join(BASE_DIR, 'data', 'model.pkl'), 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 # Page config
 st.set_page_config(
